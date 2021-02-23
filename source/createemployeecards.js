@@ -1,4 +1,4 @@
-const Manager = require("../lib/manager");
+const Manager = require("../classes/manager");
 const { generateTeamProfile } = require("./makehtml");
 
 const cardsArray = [];

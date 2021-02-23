@@ -1,11 +1,11 @@
 const fs = require("fs");
 const inquire = require("inquirer");
-const Employee = require("./lib/employee");
-const Manager = require("./lib/manager");
-const Engineer = require("./lib/engineer");
-const Intern = require("./lib/intern");
-const generateHtml = require('./src/makehtml');
-const createCardsFunction = require('./src/createemployeecards');
+const Employee = require("./classes/employee");
+const Manager = require("./classes/manager");
+const Engineer = require("./classes/engineer");
+const Intern = require("./classes/intern");
+const generateHtml = require('./source/makehtml');
+const createCardsFunction = require('./source/createemployeecards');
 
 const teamArray = [];
 
@@ -33,7 +33,7 @@ function addManager() {
         }
     ]).then( (answers) => {
 
-        const manager = new manager(answers.name, answers.id, answers.email, answers.officeNumber);
+        const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
         teamArray.push(manager);
         addEmployee();
 
