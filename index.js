@@ -55,8 +55,6 @@ function addEmployee() {
         {
             when: (answers) => {
                 if(answers.nextEmployee === "Done") {
-                    // const newHtml = generateHtml.generateTeamProfile(teamArray);
-                    // writeToFile(newHtml);
                     const newHtml = createCardsFunction.createCards(teamArray);
                     writeToFile(newHtml);
                 }
@@ -92,11 +90,11 @@ function addEmployee() {
     ]).then( (answers) => {
 
         if(answers.nextEmployee === "Engineer") {
-            const engineer = new engineer(answers.name, answers.id, answers.email, answers.github);
+            const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
             teamArray.push(engineer);
         }
         if(answers.nextEmployee === "Intern") {
-            const intern = new intern(answers.name, answers.id, answers.email, answers.school);
+            const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
             teamArray.push(intern);
         }
         addEmployee();

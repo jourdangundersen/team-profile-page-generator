@@ -33,6 +33,7 @@ the creator was the sole contributor
 ### testing
 
 this program was tested by the created, Jourdan Gundersen, along with the test files in the repository
+![](./assets/picture2.png)
 
 ### questions
 
@@ -42,6 +43,6 @@ you may also contact me via email at jourdancgundersen@gmail.com
 
 github repo: https://github.com/jourdangundersen/team-profile-page-generator
 
-deployed link: [team-profile-page-generator](https://drive.google.com/file/d/1J4mGav3nrjYDasAytdgY-XH2tY9CcMAB/view?usp=sharing)
+deployed link: [team-profile-page-generator](https://drive.google.com/file/d/1WkC9ZD5x8uCAK3HuRX2jFNZQ3qRE2LLL/view)
 
-![](./assets/htmlprofilegeneratorpic.png)
+![](./assets/picture1.png)
