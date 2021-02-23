@@ -1,6 +1,6 @@
 # team-profile-page-generator
 
-## table-of-contents
+### table-of-contents
 
 - [description](#description)
 - [installaion](#installation)
@@ -9,11 +9,11 @@
 - [testing](#testing)
 - [questions](#questions)
 
-## description
+### description
 
 this program is designed to create an html page based upon information inputted by the user regarding employees such as a manager, engineers, and interns.
 
-## installation
+### installation
 
 to successfully run this program, the user will need to:
 
@@ -26,13 +26,14 @@ to successfully run this program, the user will need to:
 
 to run this program type "node index.js" in the integrated terminal
 
-## contribute
+### contribute
 
-the creator was the sole contributor
+the creator was the sole contributor, open to suggestions and constructive criticism!
 
 ### testing
 
-this program was tested by the created, Jourdan Gundersen, along with the test files in the repository
+this program was tested by the creator, Jourdan Gundersen, along with the test files in the repository
+
 ![](./assets/picture2.png)
 
 ### questions
