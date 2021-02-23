@@ -14,22 +14,22 @@ function addManager() {
         {
             type: "input",
             name: "name",
-            message: "What is the name of the manager?"
+            message: "what is the name of the manager?"
         },
         {
             type: "input",
             name: "id",
-            message: "What is the ID of the manager?"
+            message: "what is the ID of the manager?"
         },
         {
             type: "input",
             name: "email",
-            message: "What is the email of the manager?"
+            message: "what is the email of the manager?"
         },
         {
             type: "input",
             name: "officeNumber",
-            message: "What is the manager's office number?"
+            message: "what is the manager's office number?"
         }
     ]).then( (answers) => {
 
@@ -45,7 +45,7 @@ function addEmployee() {
         {
             type: "list",
             name: "nextEmployee",
-            message: "Would you like to add an Engineer, Intern, or are you finished with your team?",
+            message: "would you like to add an Engineer, Intern, or are you finished with your team?",
             choices: [
                 "Engineer",
                 "Intern",
@@ -65,37 +65,37 @@ function addEmployee() {
         {
             type: "input",
             name: "name",
-            message: `What is the name of the employee?`
+            message: `what is the name of the employee?`
         },
         {
             type: "input",
             name: "id",
-            message: `What is the ID of the employee?`
+            message: `what is the ID of the employee?`
         },
         {
             type: "input",
             name: "email",
-            message: `What is the email of the employee?`
+            message: `what is the email of the employee?`
         },
         {
             when: (answers) => answers.nextEmployee === "Engineer",
             type: "input",
             name: "github",
-            message: `What is the github username for this Engineer?`
+            message: `what is the github username for this Engineer?`
         },
         {
             when: (answers) => answers.nextEmployee === "Intern",
             type: "input",
             name: "school",
-            message: `What is the name of the school this Intern attends?`
+            message: `what is the name of the school this Intern attends?`
         }
     ]).then( (answers) => {
 
-        if(answers.nextEmployee === "engineer") {
+        if(answers.nextEmployee === "Engineer") {
             const engineer = new engineer(answers.name, answers.id, answers.email, answers.github);
             teamArray.push(engineer);
         }
-        if(answers.nextEmployee === "intern") {
+        if(answers.nextEmployee === "Intern") {
             const intern = new intern(answers.name, answers.id, answers.email, answers.school);
             teamArray.push(intern);
         }

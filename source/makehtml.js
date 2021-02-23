@@ -12,9 +12,9 @@ function generateTeamProfile(cardsArray) {
         <title>Team Profiles</title>
     </head>
     <body>
-        <nav class="navbar mb-5 navbar-light bg-dark">
+        <nav class="navbar mb-5 navbar-light bg-danger">
             <div class="container-fluid">
-                <span class="navbar-brand mx-auto text-light"><h1>Team Profile</h1></span>
+                <span class="navbar-brand mx-auto text-light"><h1>✰ <em>Team Profile</em> ✰</h1></span>
             </div>
         </nav>
         <div class="container">
